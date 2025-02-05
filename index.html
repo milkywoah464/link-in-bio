@@ -1,26 +1,166 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My link-in bio.</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Lou Stockmeyer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ovo|Quattrocento+Sans" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+      * {
+        /*
+        border: thin yellow dotted;
+        */
+      }
+
+      html {
+        min-height: 100%;
+      }
+
+      body {
+        min-height: 100%;
+        padding: 40px 0;
+        background: linear-gradient(165deg, #e79c46, #e49442, #e28d3d, #df853a, #dc7d36, #d97633, #d66e30, #d3662e, #d05d2c, #cd552a, #ca4c28, #c64327); /* made at https://learnui.design/tools/gradient-generator.html */
+        color: #ebdad2;
+        font-family: "Helvetica";
+      }
+
+      a {
+        color: #ebdad2;
+        text-decoration: wavy;
+        font-family: "Work Sans", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-size: 18px;    
+        /*
+        font-family: 'Quattrocento Sans', sans-serif;
+        font-family: 'Courier New', Courier, monospace;
+        font-family: Arial, Helvetica, sans-serif;
+        */
+      }
+
+      .main-container{
+        max-width: 650px;
+        margin: 0 auto;
+      }
+
+      .image-row{
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .avatar {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 100px;
+        margin: 0 auto;
+        border:#787b22 thick double;
+        box-shadow: 10px 10px 25px 0px rgba(120,123,34,0.25);
+      }
+
+      .name-row{
+        text-align: center;
+        margin-bottom: 15px;
+        /*
+        font-family:'Courier New', Courier, monospace;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 48px;
+        */
+        font-family: 'Ovo', serif;
+        font-size: 48px;
+        font-weight: bolder;
+      }
+
+      .social-icons-row {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .thumbnail {
+        width: 70px;
+        height: 70px;
+        padding: 10px 15px;
+        border-radius: 10px;
+        object-fit: contain;
+      }
+
+      .link{
+        background-color: #ebdad27d;
+        border-radius: 100px;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        padding-right: 48px;
+        box-shadow: 10px 10px 25px 0px rgba(120,123,34,0.25);
+      }
+
+      .link-text{
+        font-size: 20px;
+        /*font-weight: bolder;*/
+        flex-grow: 1;
+        text-align: center;
+      }
+
+    </style>
   </head>
   <body>
     <div class="main-container">
-      <div class="image-row">
 
+      <div class="image-row">
+        <img class="avatar" src="myImages/headshot.png" alt="Lou Stockmeyer headshot.">
       </div>
 
       <div class="name-row">
-
+        Lou Stockmeyer
       </div>
 
       <div class="social-icons-row">
-
-      </div>
+        
+          <a href="https://www.instagram.com/mlstockmeyer/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        
+        
+          <a href="https://www.linkedin.com/in/lou-stockmeyer/" target="_blank">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        
+        
+          <a href="https://github.com/milkywoah464" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        
+        
+          <a href="https://on.soundcloud.com/VTmx2jSPQjteysxA8" target="_blank">
+            <i class="fa-brands fa-soundcloud"></i>
+          </a>
+        
+        
+          <a href="https://milky-woah.itch.io/" target="_blank">
+            <i class="fa-brands fa-itch-io"></i>
+          </a>
+        
+      </div> <!--social-icons-row-->
 
       <div class="links-row">
-        
-      </div>
-    </div>
+        <div class="link">
+          <img class="thumbnail" src="myImages/speakericon.png" alt="Sound icon.">
+          <a class="link-text" href="https://www.theatreinchicago.com/the-pyg-hypothesis/12814/" target="_blank">
+            Upcoming Sound Design Project!
+          </a>
+        </div>
+        <div class="link">
+          <img class="thumbnail" src="myImages/gooseicon.png" alt="Cartoon goose.">
+          <a class="link-text" href="https://www.phys.unm.edu/~tw/fas/yits/archive/oliver_wildgeese.html" target="_blank">
+            My favorite poem :)
+          </a>
+        </div>
+      </div> <!--links-row-->
+
+    </div> <!--main-container-->
   </body>
 </html>
